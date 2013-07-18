@@ -63,7 +63,7 @@ if !exists("g:scaladoc_paths")
 endif
 
 if !exists(":ScalaDoc")
-  command -buffer -nargs=+ ScalaDoc :call scaladoc#Search('<f-args>')
+  command -nargs=+ ScalaDoc :call scaladoc#Search('<f-args>')
 endif
 
 let &cpo = s:keepcpo
